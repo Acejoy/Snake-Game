@@ -140,9 +140,9 @@ class Game:
         self.render_background()
         font = pygame.font.SysFont('arial',30)
         line1 = font.render(f"Game is Over .Your Score is: {self.snake.length}",True,(255,0, 0))
-        self.surface.blit(line1, (SCREEN_SIZE[0]//2 -150, SCREEN_SIZE[1]//2))
+        self.surface.blit(line1, (SCREEN_SIZE[0]//2 -200, SCREEN_SIZE[1]//2-40))
         line2 = font.render(f"To play again, press Enter. To quit, press Escape",True,(255,255, 255))
-        self.surface.blit(line2, (SCREEN_SIZE[0]//2 -200, SCREEN_SIZE[1]//2 +50))
+        self.surface.blit(line2, (SCREEN_SIZE[0]//2 -260, SCREEN_SIZE[1]//2 +10))
         pygame.display.flip()
 
         pygame.mixer.music.pause()
